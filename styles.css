@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
-/* font-family: 'Fraunces', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,700&display=swap');/* font-family: 'Fraunces', serif; */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 /* font-family: 'Montserrat', sans-serif; */ 
 
@@ -27,4 +26,122 @@ p, .type, button{
 
 h1, .price{
     font-family: 'Fraunces', serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cream);
+}
+
+.product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+img{
+    border-radius: 20px 0px 0px 20px;
+}
+
+.info, img{
+    height: 500px;
+}
+
+.type{
+    display: block;
+    margin-bottom: 5px;
+    letter-spacing: 5px;
+    color: var(--dark-grayish-blue);
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    padding: 40px;
+    gap: 20px;
+}
+
+.name{
+    color:var(--very-dark-blue);
+    line-height: 30px;
+}
+
+.description{
+    color:var(--dark-grayish-blue);
+    line-height: 25px;
+}
+
+.info{
+    background-color: var(--white);
+    border-radius: 0px 20px 20px 0px;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.price .actual{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--dark-cyan);
+}
+
+.price .previous{
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration:line-through;
+    color:var(--dark-grayish-blue)
+}
+
+.add{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-cyan);
+    color: var(--white);
+    border: none;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.add::before{
+    content: url('/images/icon-cart.svg');
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.add:active{
+    filter: brightness(40%);
+}
+
+@media screen and (max-width: 1439px) {
+
+    .product{
+        flex-direction: column;
+    }
+
+    img {
+        height: auto;
+        border-radius: 20px 20px 0px 0px;
+        display: block;
+    }
+
+    .info, img{
+        width: 500px;
+    }
+
+    .info{
+        border-radius: 0px 0px 20px 20px;
+        height: auto;
+    }
 }
