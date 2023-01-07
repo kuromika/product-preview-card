@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://github.com/kuromika/product-preview-card)
-- Live Site URL: [](https://kuromika.github.io/product-preview-card/)
+- Solution URL: [https://github.com/kuromika/product-preview-card](https://github.com/kuromika/product-preview-card)
+- Live Site URL: [https://kuromika.github.io/product-preview-card/](https://kuromika.github.io/product-preview-card/)
 
 
 ### Built with
